@@ -14,6 +14,6 @@ echo "Done Configuring Docker Image: $IMAGE_NAME"
 echo "Making and Running Container $CONTAINER_NAME"
 
 echo "Creating and starting $CONTAINER_NAME..."
-docker run --name $CONTAINER_NAME $IMAGE_NAME
+docker run --name $CONTAINER_NAME -it $IMAGE_NAME
 
 echo "goodbye, world"
